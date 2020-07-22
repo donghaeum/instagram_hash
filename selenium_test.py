@@ -50,9 +50,9 @@ while True:
 
         if new_height == last_height:
             break
-        else:
-            last_height = new_height
-            continue
+        # else:
+        #     last_height = new_height
+        #     continue
 
 num_of_data = len(reallink)
 
