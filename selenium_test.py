@@ -8,34 +8,23 @@ from urllib.request import urlopen, Request
 
 # selenium의 webdriver로 크롬 브라우저를 실행한다
 driver = webdriver.Chrome("/Users/eum_dong/Downloads/chromedriver")
-driver.get("https://www.naver.com/")
+
+# "Instagram"에 접속한다
+driver.get("https://www.instagram.com/")
+driver.maximize_window()
+
 time.sleep(3)
-driver.get("https://nid.naver.com/nidlogin.login")
-time.sleep(3)
-elem = driver.find_element_by_name('id')
-elem.send_keys("edh1462")
-time.sleep(1)
-elem = driver.find_element_by_name('pw')
-elem.send_keys('eum6410!@')
-# elem.send_keys("edh1462", Keys.TAB, "eum6410!@")
-time.sleep(1)
-elem.submit()
-# "Google"에 접속한다
-# driver.get("https://www.instagram.com/")
-# driver.maximize_window()
-#
-# time.sleep(3)
-#
-# login_elem = driver.find_element_by_name("username")
-# login_elem.send_keys("eum1462@gmail.com", Keys.TAB, "eum6410!")
-# login_elem.submit()
-#
-# time.sleep(5)
-#
-#
-# driver.get("https://www.instagram.com/explore/tags/%EC%9D%8C%EC%8B%9D/")
-#
-# time.sleep(5)
+
+login_elem = driver.find_element_by_name("username")
+login_elem.send_keys("eum1462@gmail.com", Keys.TAB, "eum6410!")
+login_elem.submit()
+
+time.sleep(5)
+
+
+driver.get("https://www.instagram.com/explore/tags/%EC%9D%8C%EC%8B%9D/")
+
+time.sleep(5)
 #
 # SCROLL_PAUSE_TIME = 1.0
 # reallink = []
