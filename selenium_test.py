@@ -22,7 +22,7 @@ login_elem.submit()
 time.sleep(5)
 
 
-driver.get("https://www.instagram.com/explore/tags/%EC%9D%8C%EC%8B%9D/")
+driver.get("https://www.instagram.com/explore/tags/음식물오염제거/")
 
 time.sleep(5)
 
