@@ -87,26 +87,13 @@ for i in tqdm(range(num_of_data)):
 
 driver.close()
 
-# html = driver.page_source
-# soup = BeautifulSoup(html, 'html.parser')
-# notices = soup.select('div._7UhW9   xLCgt      MMzan  KV-D4          se6yk        hjZTB>span>div>a')
-#
-# for n in notices:
-#     print(n.text())
-
-# time.sleep(5)
-
-
-
 # driver.quit()
 
-# time.sleep(5)
 # 페이지의 제목을 체크하여 'Google'에 제대로 접속했는지 확인한다
 # assert "Google" in driver.title
 # assert "Naver" in driver.title
 # assert "Instagram" in driver.title
 
-# driver.quit()
 # 검색 입력 부분에 커서를 올리고
 # 검색 입력 부분에 다양한 명령을 내리기 위해 elem 변수에 할당한다
 # elem = driver.find_element_by_name("q")
